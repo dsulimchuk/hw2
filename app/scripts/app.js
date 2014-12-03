@@ -8,12 +8,15 @@
       $routeProvider.
           when('/', {
             templateUrl: 'views/home.html',
-            controller: 'HomeController'
+            controller: 'HomeController',
+            controllerAs: 'ctrl'
           }).
           when('/search', {
             templateUrl: 'views/search.html',
-            controller: 'SearchController'
-          }).
+            controller: 'SearchController',
+            controllerAs: 'ctrl'
+          })
+          .
           otherwise({
             redirectTo: '/'
           });

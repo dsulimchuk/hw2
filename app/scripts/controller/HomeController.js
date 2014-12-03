@@ -10,5 +10,5 @@
   };
 
   HomeController.$inject = ['ProductService'];
-  angular.module('auction').controller('HomeController', HomeController);
+  angular.module('auction').controller("HomeController", HomeController);
 }());
